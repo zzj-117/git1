@@ -8,17 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@EnableAutoConfiguration
-@RestController
 public class Git1Application {
 
 	public static void main(String[] args) {
-		System.out.println("bhxdj");
+		SpringApplication.run( Git1Application.class, args);
 	}
 
 
-	@RequestMapping("/hello/{name}")
-	public String sayHello(@PathVariable("name") String name) {
-		return "hello, " + name +", this is spring boot demo";
-	}
 }
